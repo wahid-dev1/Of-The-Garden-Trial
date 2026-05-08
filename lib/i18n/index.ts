@@ -1,3 +1,5 @@
+import { SITE_BRAND } from "@/lib/branding";
+
 export const locales = ["en", "ar"] as const;
 
 export type Locale = (typeof locales)[number];
@@ -15,7 +17,7 @@ export function getDirection(locale: Locale): "ltr" | "rtl" {
 
 export const dictionaries = {
   en: {
-    brand: "Of The Garden Trial",
+    brand: SITE_BRAND.en,
     nav: {
       products: "Products",
       cart: "Cart",
@@ -152,7 +154,7 @@ export const dictionaries = {
     },
   },
   ar: {
-    brand: "تجربة الحديقة",
+    brand: SITE_BRAND.ar,
     nav: {
       products: "المنتجات",
       cart: "السلة",

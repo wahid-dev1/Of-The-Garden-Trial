@@ -6,6 +6,7 @@ import { Providers } from "@/app/providers";
 import { CartNavLink } from "@/components/CartNavLink";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { SITE_BRAND, siteTitle } from "@/lib/branding";
 import { getDirection, getDictionary } from "@/lib/i18n";
 import { getRequestLocale } from "@/lib/i18n/server";
 import { getRequestTheme } from "@/lib/theme/server";
@@ -21,8 +22,23 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Of The Garden Trial | تجربة الحديقة",
+  title: {
+    default: siteTitle(),
+    template: `%s | ${SITE_BRAND.en}`,
+  },
   description: "A polished bilingual product ordering flow",
+  applicationName: SITE_BRAND.en,
+  openGraph: {
+    title: siteTitle(),
+    siteName: SITE_BRAND.en,
+    description: "A polished bilingual product ordering flow",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteTitle(),
+    description: "A polished bilingual product ordering flow",
+  },
 };
 
 export default async function RootLayout({
