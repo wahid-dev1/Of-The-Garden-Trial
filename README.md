@@ -1,4 +1,4 @@
-# Product Ordering Trial
+# Of The Garden Trial
 
 A small Next.js app that demonstrates a simple ordering flow:
 

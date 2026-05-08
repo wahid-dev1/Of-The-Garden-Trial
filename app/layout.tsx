@@ -21,7 +21,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Noura Store | متجر نورة",
+  title: "Of The Garden Trial | تجربة الحديقة",
   description: "A polished bilingual product ordering flow",
 };
 
@@ -48,7 +48,7 @@ export default async function RootLayout({
             <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-4">
               <Link href="/products" className="group flex items-center gap-3 font-semibold tracking-tight">
                 <span className="grid h-9 w-9 place-items-center rounded-2xl bg-zinc-950 text-sm text-white shadow-sm transition group-hover:scale-105 dark:bg-white dark:text-zinc-950">
-                  N
+                  G
                 </span>
                 <span>{dictionary.brand}</span>
               </Link>

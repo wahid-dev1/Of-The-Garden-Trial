@@ -15,7 +15,7 @@ export function getDirection(locale: Locale): "ltr" | "rtl" {
 
 export const dictionaries = {
   en: {
-    brand: "Noura Store",
+    brand: "Of The Garden Trial",
     nav: {
       products: "Products",
       cart: "Cart",
@@ -152,7 +152,7 @@ export const dictionaries = {
     },
   },
   ar: {
-    brand: "متجر نورة",
+    brand: "تجربة الحديقة",
     nav: {
       products: "المنتجات",
       cart: "السلة",
